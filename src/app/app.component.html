@@ -1,0 +1,8 @@
+<app-nav></app-nav>
+<div class="container">
+  <a href="#" class="btn btn-primary" (click)="OpenContactList()">Contact List</a>
+  <app-slide-out [display]="displayContactList" (onClose)="CloseContactList()">
+    <app-contact-list [data]="contactList"></app-contact-list>
+  </app-slide-out>
+</div>
+<app-footer></app-footer>

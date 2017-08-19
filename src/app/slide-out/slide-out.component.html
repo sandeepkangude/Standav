@@ -1,0 +1,21 @@
+<div *ngIf=display style="width:600px;">
+  <div class="row">
+    <div class="col col-12">
+      <app-close-button (onClose)="CloseSlide()"></app-close-button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col col-12">
+      <ng-content></ng-content>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col col-6">
+      <button class="btn btn-primary btn-block">Action 1</button>
+    </div>
+    <div class="col col-6">
+      <button class="btn btn-primary btn-block">Action 2</button>
+    </div>
+  </div>
+
+</div>
